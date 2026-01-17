@@ -1,4 +1,4 @@
-# Hospital Operations: SQL-Driven Business Intelligence 📊
+# Hospital Operations: SQL-Driven Business Intelligence 
 
 ![SQL](https://img.shields.io/badge/Language-SQL_SQLite-blue)
 ![Database](https://img.shields.io/badge/Architecture-Normalized_Relational-orange)
