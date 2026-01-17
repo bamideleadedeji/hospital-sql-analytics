@@ -17,9 +17,15 @@ I architected a two-table relational system to reduce data redundancy:
 * **Date Engineering:** Using `strftime` and `CASE` statements to extract Day-of-Week trends.
 * **Aggregation & Filtering:** Utilizing `GROUP BY` and `HAVING` to identify "Repeat Offenders" (patients with multiple no-shows).
 
-##  Strategic Insight
-The analysis revealed that **Monday** and **Friday** carry the highest no-show rates. 
-**Recommendation:** Implement an automated SMS reminder 24 hours prior to Monday appointments to reclaim lost revenue.
+* ##  Strategic Insight (Data-Driven)
+Contrary to general industry assumptions that Mondays have the highest no-show rates, **my analysis of this specific dataset revealed that Sunday and Tuesday are the peak days for missed appointments.**
+
+###  Strategic Recommendations:
+1.  **Tiered Intervention:** Since 'WaitDays' is a primary predictor, patients with appointments booked more than 7 days in advance should receive a **Two-Tiered Reminder**:
+    * **T-24 Hours:** Automated SMS reminder.
+    * **Day-of:** A personalized phone call for Sunday/Tuesday slots to confirm attendance.
+2.  **Scheduling Optimization:** Investigate why Sunday has high no-shows (e.g., transportation or staffing) and consider overbooking strategies specifically for Tuesday mornings to offset lost revenue.
+
 
 ##  Repository Contents
 * `hospital_analytics.ipynb`: Python/SQL hybrid notebook.
